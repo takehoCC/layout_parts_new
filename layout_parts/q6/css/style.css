@@ -1,12 +1,24 @@
 @charset "UTF-8";
 
-/* 左右中央寄せ */
+/* 左右中央寄せ*/
+
 .q6--horizontal .q6__box_text {
-    margin:0 auto;
-    padding: 10px;
+    padding: 10px 0;
     width: 90px;
-    text-align: center;
     background-color: #E6F2FF;
+}
+
+.q6__box.a-textalign .q6__box_contentbox {
+    text-align: center;
+}
+
+.q6__box.a-textalign .q6__box_text {
+    display: inline-block;
+}
+
+.q6__box.a-margin .q6__box_text {
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* 天地中央寄せ */

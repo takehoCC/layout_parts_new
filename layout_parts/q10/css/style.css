@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* 回答はここに書いてね */
+/* 回答はここに書いてね 吹き出しは座標で書く*/
 .q10_speechbubbles{
     position: relative;
     margin:0 auto;
@@ -12,37 +12,21 @@
     line-height: 16px;
 }
 
-.q10_speechbubbles:before,
-.q10_speechbubbles:after{
-    content: "";
+.q10_speechbubbles:before, .q10_speechbubbles:after {
     position: absolute;
-    right: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    margin: auto;
+    border: 20px solid transparent;
+    content: "";
 }
 
 .q10_speechbubbles:before{
-    right: 410px;
-    left: 0;
-    width: 0px;
-    height: 0px;
-    bottom: -20px;
-    border-style: solid;
-    border-color: #222 transparent transparent transparent;
-    border-width: 20px 20px 0 20px;
+    left: 40px;
+    bottom: -45px;
+    border-top-color: #222;
 }
 
 .q10_speechbubbles:after{
-    right: 410px;
-    left: 0;
-    width: 0px;
-    height: 0px;
-    bottom: -14px;
-    border-style: solid;
-    border-color: #fff transparent transparent transparent;
-    border-width: 20px 20px 0 20px;
-    z-index: 10;
+    left: 40px;
+    bottom: -38px;
+    border-top-color: #fff;
 }
-/* 回答はここに書いてね */
+/* 回答はここに書いてね*/
