@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="format-detection" content="telephone=no">
-    <title>基本レイアウト・パーツ</title>
-    <link rel="stylesheet" href="http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/assets/css/reset.css">
-    <link rel="stylesheet" href="http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/assets/css/base.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <h1 class="title">基本レイアウト・パーツ</h1>
-      <h2 class="headline">
-        <p class="headline__text">Q4. display: table</p>
-      </h2>
-      <div class="box">
-        <!--
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<title>基本レイアウト・パーツ</title>
+		<link rel="stylesheet" href="http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/assets/css/reset.css">
+		<link rel="stylesheet" href="http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/assets/css/base.css">
+		<link rel="stylesheet" href="css/style.css"> </head>
+<body>
+		<div class="wrapper">
+				<h1 class="title">基本レイアウト・パーツ</h1>
+				<h2 class="headline">
+						<p class="headline__text">Q4. display: table</p>
+				</h2>
+				<div class="box">
+						<!--
              Webサイトを作る際、「メインコンテンツはウィンドウの横幅に応じて伸縮するけれどサイドバーは常に固定値」といったようなレイアウトをすることが多々あります。
              そのようなときに、ウィンドウサイズに対して固定のものと可変のものを横に並べるやり方がわからないとレイアウトができません。
              display: tableを使うことで実現することができるのでやってみましょう。
@@ -30,23 +29,23 @@
              ・display: table
              ・display: table-cell
         -->
-        <!-- 回答はクラスq4の要素の中に書いてね -->
-        <!-- すでについてるクラスにはstyleを指定しない。styleをつける場合は自分で新たにクラスをつけること -->
-        <!-- 新たにタグは追加しなくてもできます。 -->
-        <div class="q4">
-          <div>
-            <div>固定</div>
-            <div>可変</div>
-            <div>固定</div>
-          </div>
-          <div>
-            <div>可変</div>
-            <div>可変</div>
-            <div>固定</div>
-          </div>
-        </div>
-        <!-- 回答はクラスq4の要素の中に書いてね -->
-      </div>
-    </div>
-  </body>
+						<!-- 回答はクラスq4の要素の中に書いてね -->
+						<!-- すでについてるクラスにはstyleを指定しない。styleをつける場合は自分で新たにクラスをつけること -->
+						<!-- 新たにタグは追加しなくてもできます。 -->
+						<div class="q4">
+								<div class="q4_contents">
+										<div class="q4_contents_momo">固定</div>
+										<div class="q4_contents_purple">可変</div>
+										<div class="q4_contents_blue">固定</div>
+								</div>
+								<div class="q4_contents">
+										<div class="q4_contents_yellow">可変</div>
+										<div class="q4_contents_pink">可変</div>
+										<div class="q4_contents_green">固定</div>
+								</div>
+						</div>
+						<!-- 回答はクラスq4の要素の中に書いてね -->
+				</div>
+		</div>
+</body>
 </html>

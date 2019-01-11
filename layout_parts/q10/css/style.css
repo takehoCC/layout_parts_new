@@ -1,5 +1,48 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.q10_speechbubbles{
+    position: relative;
+    margin:0 auto;
+    width: 450px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 5px solid #222;
+    font-size:16px;
+    line-height: 16px;
+}
 
+.q10_speechbubbles:before,
+.q10_speechbubbles:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    margin: auto;
+}
+
+.q10_speechbubbles:before{
+    right: 410px;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    bottom: -20px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+    border-width: 20px 20px 0 20px;
+}
+
+.q10_speechbubbles:after{
+    right: 410px;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    bottom: -14px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 20px 20px 0 20px;
+    z-index: 10;
+}
 /* 回答はここに書いてね */
